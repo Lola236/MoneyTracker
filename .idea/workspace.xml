@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="845d030e-8797-4c21-af9e-044bd82b90ea" name="Changes" comment="" />
+    <list default="true" id="845d030e-8797-4c21-af9e-044bd82b90ea" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Categorie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inkomst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Transactie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Uitgave.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Lola236"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Lola236&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Lola236/MoneyTracker.git",
-    "accountId": "4b103bc7-7873-43d2-ac94-7308c0fbef4b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Lola236/MoneyTracker.git&quot;,
+    &quot;accountId&quot;: &quot;4b103bc7-7873-43d2-ac94-7308c0fbef4b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -36,6 +51,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/Lolal/IdeaProjects/MoneyTracker/src/Main.java",
     "vue.rearranger.settings.migration": "true"
@@ -58,6 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744374597199</updated>
       <workItem from="1744374946980" duration="11000" />
+      <workItem from="1744897131365" duration="1822000" />
     </task>
     <servers />
   </component>
