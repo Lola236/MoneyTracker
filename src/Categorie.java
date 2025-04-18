@@ -4,12 +4,12 @@ import java.util.ArrayList;
 public class Categorie {
     private String naam;
     private double budgetlimiet;
-    private List<Transactie> transactie;
+    private List<Transactie> transacties;
 
     public Categorie(String naam) {
         this.naam = naam;
         this.budgetlimiet = 0.0;
-        this.transactie = new ArrayList();
+        this.transacties = new ArrayList<>();
     }
     public String getNaam() {return naam;
     }
@@ -19,11 +19,11 @@ public class Categorie {
     }
     public void setBudgetlimiet(double budgetlimiet) {this.budgetlimiet = budgetlimiet;
     }
-    public void voegTransactieToe(Transactie transactie) {this.transactie.add(transactie);
+    public void voegTransactieToe(Transactie transactie) {this.transacties.add(transactie);
     }
     public double totaalBedrag(){
         double totaal = 0.0;
-        for(Transactie transactie : transactie){
+        for(Transactie transactie : transacties){
             totaal += transactie.berekenSaldo();
         }
         return totaal;
@@ -34,6 +34,6 @@ public class Categorie {
     }
 
     public List<Transactie> getTransactie() {
-        return transactie;
+        return transacties;
     }
 }
