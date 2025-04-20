@@ -3,64 +3,62 @@ import java.util.List;
 
 public class Overzicht {
     private String maand;
-    private List<Uitgave> uitgaven;
+    private List<Transactie> inkomsten;
+    private List<Transactie> uitgaven;
 
     public Overzicht(String maand) {
         this.maand = maand;
+        this.inkomsten = new ArrayList<>();
         this.uitgaven = new ArrayList<>();
     }
 
     public void categoriseerTransactie(Transactie transactie) {
-        if (transactie.berekenSaldo() < 0 && transactie.getDatum().startsWith(maand)) {
-            Uitgave uitgave = new Uitgave(transactie.getBedrag(), transactie.getDatum(), transactie.getBeschrijving(), transactie.getCategorie());
-            uitgaven.add(uitgave);
+        if (transactie.getDatum().startsWith(maand)) {
+            if (transactie.getType().equalsIgnoreCase("inkomst")) {
+                inkomsten.add(transactie);
+            } else if (transactie.getType().equalsIgnoreCase("uitgave")) {
+                uitgaven.add(transactie);
+            }
         }
     }
 
+    public double berekenTotaalInkomsten() {
+        double totaal = 0.0;
+        for (Transactie inkomst : inkomsten) {
+            totaal += inkomst.getBedrag();
+        }
+        return totaal;
+    }
     public double berekenTotaalUitgaven() {
         double totaal = 0.0;
-        for (Uitgave uitgave : uitgaven) {
-            totaal += uitgave.berekenSaldo();
-        }
-        return totaal;
-    }
-    public double berekenTotalUitgaven(List<Transactie> transacties) {
-        double totaal = 0.0;
-        for (Transactie transactie : transacties) {
-            if (transactie.berekenSaldo() < 0 && transactie.getDatum().startsWith(maand)) {
-                totaal += transactie.berekenSaldo();
-            }
+        for (Transactie uitgave : uitgaven) {
+            totaal += uitgave.getBedrag();
         }
         return totaal;
     }
 
-    public List<Uitgave> filterTransactiesOpMaand(String maand) {
-        List<Uitgave> gefiltered = new ArrayList<>();
-        for (Uitgave uitgave : uitgaven) {
-            if (uitgave.getDatum().startsWith(maand)) {
-              gefiltered.add(uitgave);
-            }
-        }
-        return gefiltered;
-    }
-
-    public void toonMaandoverzicht(){
+    public void toonMaandoverzicht() {
         System.out.println("Maandoverzicht voor: " + maand);
-        if (uitgaven.isEmpty()) {
-            System.out.println("Geen uitgaven geregistreerd.");
+
+        if (inkomsten.isEmpty()) {
+            System.out.println("\nGeen inkomsten geregistreerd.");
         } else {
-            for (Uitgave uitgave : uitgaven) {
-                System.out.println("- " + uitgave.getDatum() + ": " + uitgave.getBeschrijving() + " (€" + uitgave.getBedrag() + ")");
+            System.out.println("\nInkomsten:");
+            for (Transactie t : inkomsten) {
+                System.out.println("+ " + t.getDatum() + ": " + t.getBeschrijving() + " (€" + t.getBedrag() + ")");
             }
-            System.out.println("Totaal uitgaven: €" + berekenTotaalUitgaven());
         }
-    }
 
-    public String getMaand(){
-        return maand;
-    }
+        if (uitgaven.isEmpty()) {
+            System.out.println("\n Geen uitgaven geregistreerd.");
+        } else {
+            System.out.println("\nUitgaven:");
+            for (Transactie t : uitgaven) {
+                System.out.println("- " + t.getDatum() + ": " + t.getBeschrijving() + " (€" + t.getBedrag() + ")");
+            }
+        }
 
-    public List<Uitgave> getUitgaven() {
-        return uitgaven;
+        System.out.println("\n Totaal inkomsten: €" + berekenTotaalInkomsten());
+        System.out.println("Totaal uitgaven: €" + berekenTotaalUitgaven());
     }
 }

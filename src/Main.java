@@ -20,8 +20,18 @@ public class Main {
         String categorieNaam = scanner.nextLine();
 
         gebruiker.voegCategorieToe(categorieNaam);
-        Categorie categorie = new Categorie(categorieNaam);
 
+        Categorie categorie = null;
+        for (Categorie c : gebruiker.getCategorieen()) {
+            if (c.getNaam().equalsIgnoreCase(categorieNaam)) {
+                categorie = c;
+                break;
+            }
+        }
+        if (categorie == null) {
+            System.out.println("❌ Fout bij koppelen van categorie!");
+            return;
+        }
         System.out.println(" Wat is je budgetlimiet voor deze categorie?: ");
         double budgetlimiet = scanner.nextDouble();
         scanner.nextLine();
@@ -66,7 +76,7 @@ public class Main {
 
         Overzicht overzicht = new Overzicht(gekozenMaand);
 
-        for (Categorie categorie1 : gebruiker.getCategories()){
+        for (Categorie categorie1 : gebruiker.getCategorieen()){
             for (Transactie transactie : categorie1.getTransactie()){
                 overzicht.categoriseerTransactie(transactie);
             }

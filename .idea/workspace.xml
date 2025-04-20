@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="845d030e-8797-4c21-af9e-044bd82b90ea" name="Changes" comment="bezig">
-      <change afterPath="$PROJECT_DIR$/src/Gebruiker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Overzicht.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tips.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Categorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Categorie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gebruiker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gebruiker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inkomst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inkomst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Overzicht.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Overzicht.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Transactie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Transactie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uitgave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uitgave.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,22 +49,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Lolal/IdeaProjects/MoneyTracker/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Lolal/IdeaProjects/MoneyTracker/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,7 +82,9 @@
       <option name="presentableId" value="Default" />
       <updated>1744374597199</updated>
       <workItem from="1744374946980" duration="11000" />
-      <workItem from="1744897131365" duration="15827000" />
+      <workItem from="1744897131365" duration="16050000" />
+      <workItem from="1744939774193" duration="102000" />
+      <workItem from="1745103463173" duration="5673000" />
     </task>
     <task id="LOCAL-00001" summary="bezig">
       <option name="closed" value="true" />
@@ -92,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744900852503</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bezig">
+      <option name="closed" value="true" />
+      <created>1744939616008</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744939616008</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

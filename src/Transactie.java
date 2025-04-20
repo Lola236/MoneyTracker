@@ -16,5 +16,6 @@ public abstract class Transactie {
     public Categorie getCategorie() {return categorie; }
 
     public abstract double berekenSaldo();
+    public abstract String getType();
     }
 

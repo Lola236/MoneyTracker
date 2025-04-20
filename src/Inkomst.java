@@ -7,4 +7,9 @@ public class Inkomst extends Transactie {
     public double berekenSaldo() {
         return getBedrag();
     }
+
+    @Override
+    public String getType() {
+        return "inkomst";
+    }
 }
